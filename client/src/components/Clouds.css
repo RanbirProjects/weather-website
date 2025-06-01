@@ -1,0 +1,152 @@
+.clouds-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.cloud {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 50px;
+  filter: blur(5px);
+  animation: float linear infinite;
+}
+
+.cloud:before,
+.cloud:after {
+  content: '';
+  position: absolute;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+  filter: blur(5px);
+}
+
+.cloud1 {
+  width: 200px;
+  height: 60px;
+  top: 20%;
+  left: -200px;
+  animation-duration: 60s;
+}
+
+.cloud1:before {
+  width: 100px;
+  height: 100px;
+  top: -50px;
+  left: 25px;
+}
+
+.cloud1:after {
+  width: 80px;
+  height: 80px;
+  top: -35px;
+  left: 75px;
+}
+
+.cloud2 {
+  width: 300px;
+  height: 80px;
+  top: 40%;
+  left: -300px;
+  animation-duration: 80s;
+  animation-delay: -20s;
+}
+
+.cloud2:before {
+  width: 120px;
+  height: 120px;
+  top: -60px;
+  left: 40px;
+}
+
+.cloud2:after {
+  width: 100px;
+  height: 100px;
+  top: -45px;
+  left: 100px;
+}
+
+.cloud3 {
+  width: 250px;
+  height: 70px;
+  top: 60%;
+  left: -250px;
+  animation-duration: 70s;
+  animation-delay: -40s;
+}
+
+.cloud3:before {
+  width: 110px;
+  height: 110px;
+  top: -55px;
+  left: 35px;
+}
+
+.cloud3:after {
+  width: 90px;
+  height: 90px;
+  top: -40px;
+  left: 85px;
+}
+
+.cloud4 {
+  width: 180px;
+  height: 50px;
+  top: 30%;
+  left: -180px;
+  animation-duration: 50s;
+  animation-delay: -10s;
+}
+
+.cloud4:before {
+  width: 90px;
+  height: 90px;
+  top: -45px;
+  left: 25px;
+}
+
+.cloud4:after {
+  width: 70px;
+  height: 70px;
+  top: -30px;
+  left: 65px;
+}
+
+.cloud5 {
+  width: 220px;
+  height: 65px;
+  top: 70%;
+  left: -220px;
+  animation-duration: 65s;
+  animation-delay: -30s;
+}
+
+.cloud5:before {
+  width: 100px;
+  height: 100px;
+  top: -50px;
+  left: 30px;
+}
+
+.cloud5:after {
+  width: 80px;
+  height: 80px;
+  top: -35px;
+  left: 80px;
+}
+
+@keyframes float {
+  0% {
+    transform: translateX(0);
+    left: -300px;
+  }
+  100% {
+    transform: translateX(calc(100vw + 300px));
+    left: 0;
+  }
+} 
